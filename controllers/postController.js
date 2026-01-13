@@ -6,7 +6,7 @@ const createPost = async(req,res)=>{
 
         userId: req.user.id,
         desc: req.body.desc,
-        img: req.file.path,
+        img: req.body.img,
     });
 
     try{

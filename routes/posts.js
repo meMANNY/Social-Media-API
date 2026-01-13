@@ -8,6 +8,6 @@ router.get("/:id", verifyToken, postController.getPost);
 router.put("/:id", verifyToken, postController.updatePost);
 router.delete("/:id", verifyToken, postController.deletePost);
 router.put("/:id/like", verifyToken, postController.likePost);
-router.get("/:id/timeline/all", verifyToken, postController.getTimelinePosts);
+router.get("/timeline/all", verifyToken, postController.getTimelinePosts);
 
 module.exports = router;
